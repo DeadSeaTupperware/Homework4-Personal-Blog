@@ -19,7 +19,8 @@
 
     <!-- Form -->
     <section id="blog-input">
-        <form id="blog-form">
+        <h2>What's on your mind?</h2>
+        <form id="blog-form" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter Username">
             <label for="title">Title</label>
@@ -27,6 +28,7 @@
             <label for="content">Content</label>
             <input type="text" id="content" placeholder="Type Blog Post">
             <button id="submit">Submit</button>
+            <div id="error-msg"></div>
         </form>
 
     </section>
