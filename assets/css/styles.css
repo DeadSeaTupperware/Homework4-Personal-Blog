@@ -1,0 +1,25 @@
+/* color variables for referencing */
+/* :root {
+  --light: #e3fcea;
+  --dark: #010a04;
+} */
+
+/* 
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 10s;
+    transition: color 2s;
+  }
+
+.dark-mode {
+    background: black;
+    color: white;
+    transition: background-color 2s;
+    transition: color 2s;
+  }
+*/
+#mode-toggle {
+    border: none;
+    background: none;
+}

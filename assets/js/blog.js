@@ -46,7 +46,6 @@ function renderBlog() {
     postAuthor.setAttribute('id', 'blog-post-author');
     postAuthor.textContent = 'Posted by: ' + currentPost.username;
     postContent.appendChild(postAuthor);
-
   }
 
 }
@@ -60,6 +59,7 @@ backButton.addEventListener('click', function (event) {
   });
 
 clearButton.addEventListener('click', function (event) {
+  event.preventDefault();
   localStorage.clear();
   window.location.href = "blog.html";
 });

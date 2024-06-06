@@ -1,0 +1,53 @@
+/* remove default styling/Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color variables for referencing */
+:root {
+    --background: #e3fcea;
+    --content: #010a04;
+}
+
+/* Header/Nav Element Styling */
+header {
+    border-bottom: solid 5px var(--content);
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 5px;
+    border-top: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    gap: 5px;
+}
+
+figure {
+    display: flex;
+    width: 50%;
+    height: 50rem;
+    border-right: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    margin-bottom: 5px;
+}
+
+img {
+    flex: 1 1 auto;
+}
+
+section {
+    display: flex;
+    width: 50%;
+    height: 50rem;
+    border-left: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    margin-bottom: 5px;
+    align-items: center;
+}
