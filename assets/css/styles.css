@@ -1,8 +1,16 @@
+/* remove default styling/Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* color variables for referencing */
-/* :root {
-  --light: #e3fcea;
-  --dark: #010a04;
-} */
+:root {
+  --background: #e3fcea;
+  --content: #010a04;
+  font-family: Verdana, Geneva, sans-serif;
+}
 
 /* 
 body {

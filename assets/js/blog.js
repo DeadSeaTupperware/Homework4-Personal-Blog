@@ -32,7 +32,7 @@ function renderBlog() {
     li.setAttribute('id', 'blog-post-li')
     blogContent.appendChild(li);
 
-    const postTitle = document.createElement('h2');
+    const postTitle = document.createElement('p');
     postTitle.setAttribute('id', 'blog-post-title');
     postTitle.textContent = currentPost.title;
     li.appendChild(postTitle);
@@ -40,12 +40,12 @@ function renderBlog() {
     const postContent = document.createElement('p');
     postContent.setAttribute('id', 'blog-post-content');
     postContent.textContent = currentPost.content;
-    postTitle.appendChild(postContent);
+    li.appendChild(postContent);
 
     const postAuthor = document.createElement('p');
     postAuthor.setAttribute('id', 'blog-post-author');
     postAuthor.textContent = 'Posted by: ' + currentPost.username;
-    postContent.appendChild(postAuthor);
+    li.appendChild(postAuthor);
   }
 
 }

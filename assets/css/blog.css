@@ -21,7 +21,7 @@ header {
 }
 
 h1 {
-    position: fixed;
+    position: absolute;
     left: 20px;
     top: 20px;
 }
@@ -36,6 +36,7 @@ main {
     border-top: solid 5px var(--content);
     border-bottom: solid 5px var(--content);
     gap: 5px;
+    justify-content: center;
 }
 
 footer {
@@ -44,14 +45,75 @@ footer {
     border-top: solid 5px var(--content);
     border-bottom: solid 5px var(--content);
     gap: 5px;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#blog-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 16px;
+}
+
+#blog-content P {
+    padding: 5px;
 }
 
 #blog-post-li {
-    display: flex;
-    width: 100%;
     border-radius: 5px;
     border: solid 2.5px var(--content);
     padding: 10px;
     margin: 10px;
     list-style-type: none;
+}
+
+#blog-post-title {
+    border-bottom: solid 1px var(--content);
+    font-weight: bold;
+}
+
+#blog-post-content {
+    font-style: italic;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+#blog-post-author {
+    margin-top: 30px;
+}
+
+#back-button, #clear-button {
+    background-color: var(--content);
+    color: var(--background);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: grey;
+    font-weight: bolder;
+}
+
+#contacts {
+    padding: 10px;
+    margin-left: 30px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#contacts a {
+    text-decoration: none;
+    color: var(--content);
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+#contacts li {
+    display: flex;
+    padding: 10px;
+    font-style: italic;
 }
