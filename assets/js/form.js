@@ -31,7 +31,6 @@ submitButton.addEventListener('click', function (event) {
     } else if (content === '') {
         displayMessage('error', 'Cannot submit empty blog post.');
     } else {
-        displayMessage('success', 'Post successfully submitted!');
 
     // Creates object with paramaters of form data
     let blogPost = {
