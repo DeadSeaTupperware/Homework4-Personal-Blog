@@ -1,29 +1,16 @@
-const blogPosts = [];
+const backButton = document.querySelector('#back-button');
 
 function init() {
-    const username = localStorage.getItem('username');
-    const title = localStorage.getItem('title');
-    const content = localStorage.getItem('content');
+  const blogPostList = localStorage.getItem('blogPostList');
+  const blogPostsParsed = JSON.parse(blogPostList);
+  console.log(blogPostsParsed);
+}
 
-    const post = {}
-        post.username = username;
-        post.title = title;
-        post.content = content;
-  
-    if (!username || !title || !content) {
-      return;
-    }
+  init();
 
-    blogPosts.push(post);
+  backButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = "index.html";
+  });
 
-    console.log(blogPosts);
 
-  }
-
-// Pull username, title, and content from localStorage.
-// Put those elements into a blog post object.
-// Convert object to string and store in localStorage.
-// Add those objects into an array of objects.
-// Get stored objects from array and add to list item.
-
-init();

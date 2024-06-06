@@ -4,6 +4,7 @@ const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 const errorMessage = document.querySelector('#error-msg');
+const blogPostList = [];
 
 // FUNCTIONS
 function displayMessage(type, message) {
@@ -16,9 +17,9 @@ function displayMessage(type, message) {
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     
-    const username = usernameInput.value;
-    const title = titleInput.value;
-    const content = contentInput.value;
+    let username = usernameInput.value;
+    let title = titleInput.value;
+    let content = contentInput.value;
 
     if (username === '') {
         displayMessage('error', 'Username cannot be left blank.');
@@ -29,9 +30,20 @@ submitButton.addEventListener('click', function (event) {
     } else {
         displayMessage('success', 'Post successfully submitted!');
 
-    localStorage.setItem('username', username);
-    localStorage.setItem('title', title);
-    localStorage.setItem('content', content);
+    // localStorage.setItem('username', username);
+    // localStorage.setItem('title', title);
+    // localStorage.setItem('content', content);
+
+    let blogPost = {
+        username: username,
+        title: title,
+        content: content
+    };
+
+    blogPostList.push(blogPost);
+    let jsonList = JSON.stringify(blogPostList);
+    localStorage.setItem('blogPostList', jsonList);
+
     window.location.href = "blog.html";
     }
 });
