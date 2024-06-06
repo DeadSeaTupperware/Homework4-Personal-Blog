@@ -31,6 +31,8 @@ main {
 
 figure {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 50rem;
     border-right: solid 5px var(--content);
@@ -49,5 +51,7 @@ section {
     border-left: solid 5px var(--content);
     border-bottom: solid 5px var(--content);
     margin-bottom: 5px;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
