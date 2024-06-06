@@ -1,0 +1,57 @@
+/* remove default styling/Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color variables for referencing */
+:root {
+    --background: #e3fcea;
+    --content: #010a04;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Header/Nav Element Styling */
+header {
+    border-bottom: solid 5px var(--content);
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+button {
+    margin-left: 15px;
+}
+
+main {
+    display: flex;
+    margin-top: 5px;
+    border-top: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    gap: 5px;
+}
+
+footer {
+    display: flex;
+    margin-top: 5px;
+    border-top: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    gap: 5px;
+}
+
+#blog-post-li {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2.5px var(--content);
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+}
