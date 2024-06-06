@@ -16,6 +16,16 @@ button {
     margin-left: 15px;
 }
 
+#back-button, #clear-button {
+    background-color: var(--content);
+    color: var(--background);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: grey;
+    font-weight: bolder;
+}
+
+/* Main Content Styling */
 main {
     display: flex;
     margin-top: 5px;
@@ -23,22 +33,6 @@ main {
     border-bottom: solid 5px var(--content);
     gap: 5px;
     justify-content: center;
-}
-
-footer {
-    display: flex;
-    margin-top: 5px;
-    border-top: solid 5px var(--content);
-    border-bottom: solid 5px var(--content);
-    gap: 5px;
-    flex-direction: column;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: normal;
 }
 
 #blog-content {
@@ -75,13 +69,21 @@ h3 {
     margin-top: 30px;
 }
 
-#back-button, #clear-button {
-    background-color: var(--content);
-    color: var(--background);
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: grey;
-    font-weight: bolder;
+/* Footer Styling */
+footer {
+    display: flex;
+    margin-top: 5px;
+    border-top: solid 5px var(--content);
+    border-bottom: solid 5px var(--content);
+    gap: 5px;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 #contacts {

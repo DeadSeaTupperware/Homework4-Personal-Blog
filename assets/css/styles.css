@@ -12,14 +12,14 @@
   font-family: Verdana, Geneva, sans-serif;
 }
 
-
+/* Global Default Light Mode Styling */
 body {
     background-color: var(--background);
     color: var(--content);
     transition: all 2s ease;
   }
 
-
+/* Dark MOde and Toggle Icon Styling */
 .dark-mode {
   --background: black;
   --content: white;

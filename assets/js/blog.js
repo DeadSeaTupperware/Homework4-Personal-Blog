@@ -11,7 +11,6 @@ let blogPosts = [];
 function init() {
   const blogPostList = localStorage.getItem('blogPostList');
   const blogPostsParsed = JSON.parse(blogPostList);
-  // console.log(blogPostsParsed);
 
   if (blogPostsParsed !== null) {
     blogPosts = blogPostsParsed;
@@ -28,7 +27,6 @@ function renderBlog() {
     let currentPost = blogPosts[i];
 
     const li = document.createElement('li');
-    // li.textContent = currentPost.title;
     li.setAttribute('id', 'blog-post-li')
     blogContent.appendChild(li);
 
@@ -52,12 +50,13 @@ function renderBlog() {
 
 // EVENT LISTENERS
 
-// Checks for clisk on the back button to return to landing page.
+// Checks for clicks on the back button to return to landing page.
 backButton.addEventListener('click', function (event) {
     event.preventDefault();
     window.location.href = "index.html";
   });
 
+// Checks for clicks on the clear button and clears all objects from localStorage.
 clearButton.addEventListener('click', function (event) {
   event.preventDefault();
   localStorage.clear();

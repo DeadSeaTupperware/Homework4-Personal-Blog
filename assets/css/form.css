@@ -15,6 +15,7 @@ main {
     gap: 5px;
 }
 
+/* Blog Image Styling */
 figure {
     display: flex;
     justify-content: center;
@@ -30,6 +31,7 @@ figure img {
     width: 100%;
 }
 
+/* Form Styling */
 section {
     display: flex;
     width: 50%;
